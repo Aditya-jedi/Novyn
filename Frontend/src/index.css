@@ -1,0 +1,187 @@
+:root {
+  /* Futuristic Typography */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  /* Light Mode - Sleek Tech Theme */
+  --bg-color: #F9FAFB;
+  --text-color: #222222;
+  --secondary-text: #666666;
+  --accent-color: #007BFF;
+  --accent-hover: #0056CC;
+  --border-color: #E5E7EB;
+  --card-bg: #FFFFFF;
+  --nav-bg: #FFFFFF;
+  --primary-accent: #007BFF;
+  --secondary-accent: #FF6F00;
+  --highlight: #00D4FF;
+  --error: #FF4444;
+  --success: #00CC88;
+
+  /* Dark Mode - Premium Tech Theme */
+  --bg-color-dark: #121212;
+  --text-color-dark: #E0E0E0;
+  --secondary-text-dark: #CCCCCC;
+  --accent-color-dark: #339CFF;
+  --accent-hover-dark: #66B3FF;
+  --border-color-dark: #333333;
+  --card-bg-dark: #1E1E1E;
+  --nav-bg-dark: #0A0A0A;
+  --nav-bg-hover-dark: rgba(51, 156, 255, 0.1);
+
+  /* Button Colors */
+  --btn-primary: #007BFF;
+  --btn-primary-dark: #339CFF;
+  --btn-text: #FFFFFF;
+  --btn-text-dark: #121212;
+
+  /* Premium Transitions & Animations */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-medium: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-elastic: 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Premium Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Premium Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --radius-2xl: 1.5rem;
+
+  /* Enhanced Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Modern Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  --glass-dark-bg: rgba(30, 30, 30, 0.9);
+  --glass-dark-border: rgba(255, 255, 255, 0.1);
+
+  /* Tech Gradients */
+  --card-gradient: linear-gradient(135deg, rgba(0, 123, 255, 0.1) 0%, rgba(255, 111, 0, 0.1) 100%);
+  --btn-primary-gradient: linear-gradient(135deg, #007BFF 0%, #0056CC 100%);
+  --btn-primary-dark-gradient: linear-gradient(135deg, #339CFF 0%, #66B3FF 100%);
+
+  /* Premium Typography */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure root app fills the viewport */
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: var(--btn-primary);
+  color: var(--btn-text);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+}
+
+.btn-secondary {
+  background: #e2e8f0;
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background: #cbd5e0;
+}
+
+/* Legacy Button Support */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: var(--btn-primary);
+  color: var(--btn-text);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+/* Dark Theme */
+html[data-theme='dark'] {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --secondary-text: var(--secondary-text-dark);
+  --accent-color: var(--accent-color-dark);
+  --accent-hover: var(--accent-hover-dark);
+  --border-color: var(--border-color-dark);
+  --card-bg: var(--card-bg-dark);
+  --nav-bg: var(--nav-bg-dark);
+  --btn-primary: var(--btn-primary-dark);
+  --btn-text: var(--btn-text-dark);
+  --glass-bg: var(--glass-dark-bg);
+  --glass-border: var(--glass-dark-border);
+  --card-gradient: linear-gradient(135deg, rgba(51, 156, 255, 0.1) 0%, rgba(255, 111, 0, 0.1) 100%);
+  --btn-primary-gradient: var(--btn-primary-dark-gradient);
+}
+
+/* Utility Classes */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
