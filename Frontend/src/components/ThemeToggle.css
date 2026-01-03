@@ -34,7 +34,11 @@
   opacity: 0;
   transition: opacity var(--transition-medium);
   border-radius: inherit;
+
+  /* ✅ Allow clicks to pass through so it doesn't block navbar links */
+  pointer-events: none;
 }
+
 
 .theme-toggle:hover::before {
   opacity: 0.1;
